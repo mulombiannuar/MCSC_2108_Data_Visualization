@@ -1,1 +1,7 @@
-Hello world, this is just example
+from google.colab import drive
+drive.mount('/content/drive')
+
+
+data = "/content/drive/MyDrive/Datasets/spam_emails_data.csv"
+
+df = pd.read_csv(data)
